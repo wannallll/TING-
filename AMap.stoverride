@@ -1,4 +1,3 @@
-#高德地图打车签到
 name: "ampDache"
 desc: "ampDache"
 
@@ -10,7 +9,7 @@ cron:
   script:
 
     - name: "高德地图打车签到"
-      cron: "20 19 * * ?"
+      cron: "45 19 * * ?"
       timeout: 60
 
 script-providers:
