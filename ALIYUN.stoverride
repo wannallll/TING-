@@ -6,7 +6,7 @@ http:
 cron:
   script:
     - name: "阿里云盘签到"
-      cron: "35 19 * * ?"
+      cron: "37 19 * * ?"
       timeout: 60
 script-providers:
   "阿里云盘签到":
