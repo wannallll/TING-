@@ -9,7 +9,7 @@ cron:
   script:
 
     - name: "阿里云盘签到"
-      cron: "22 19 * * ?"
+      cron: "25 19 * * ?"
       timeout: 60
 
 script-providers:
