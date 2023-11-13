@@ -1,0 +1,19 @@
+#高德地图打车签到
+name: "ampDache"
+desc: "ampDache"
+
+http:
+  mitm:
+    - "*.amap.com"
+
+cron:
+  script:
+
+    - name: "高德地图打车签到"
+      cron: "50 17 * * ?"
+      timeout: 60
+
+script-providers:
+  "高德地图打车签到":
+    url: https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
+    interval: 86400
