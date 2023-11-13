@@ -1,6 +1,6 @@
 #阿里云签到
-name: "aliYunPanCheckIn"
-desc: "aliYunPanCheckIn"
+name: "阿里云盘签到"
+desc: "阿里云盘签到"
 
 http:
   mitm:
@@ -10,7 +10,7 @@ cron:
   script:
 
     - name: "阿里云盘签到"
-      cron: "54 17 * * ?"
+      cron: "0 8 * * ?"
       timeout: 60
 
 script-providers:
