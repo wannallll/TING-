@@ -1,0 +1,19 @@
+name: "高德地图签到"
+desc: "高德地图签到"
+
+http:
+
+  mitm:
+    - "*.amap.com"
+
+cron:
+  script:
+
+    - name: "ampDache_15"
+      cron: "56 14 * * *"
+      timeout: 60
+
+script-providers:
+  "ampDache_15":
+    url: http://script.hub/convert/_start_/https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js/_end_/ampDache.js?type=qx-script&target=stash-script
+    interval: 86400
