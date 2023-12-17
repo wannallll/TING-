@@ -3,11 +3,13 @@ desc: "阿里云盘签到"
 http:
   mitm:
     - "auth.alipan.com"
+
 cron:
   script:
     - name: "阿里云盘签到"
-      cron: "50 19 * * ?"
+      cron: "53 10 * * ?"
       timeout: 60
+
 script-providers:
   "阿里云盘签到":
     url: https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
